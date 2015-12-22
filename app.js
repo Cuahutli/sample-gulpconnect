@@ -18,7 +18,7 @@ angular.module('app', [])
 		"use strict";
 		$scope.saludo = "Bienvenido: ";
 		$scope.nombre = "Cuahutli Miguel Ulloa Robles";
-		$scope.awesomeThings = [
+		$scope.cosas = [
 			'HTML5 Boilerplate',
 			'AngularJS',
 			'Karma'

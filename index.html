@@ -74,7 +74,14 @@
 
 				<hr>
 
-				<p>{{ saludo }}  {{ nombre }}</p>
+				<p>{{ saludo }}  <b>{{ nombre }}</b></p>
+
+				<div class="lista">
+					<ul>
+						<li ng-repeat="cosa in cosas">{{ cosa }}</li>
+					</ul>
+				</div>
+					
 			</div>
 		</div>
 		<script src="bower_components/angular/angular.min.js"></script>
