@@ -1,0 +1,25 @@
+{
+  "name": "sample-gulpconnect",
+  "description": "Proyecto de ejemplo uso gulp-connect",
+  "main": "index.js",
+  "authors": [
+    "Cuahutli Miguel Ulloa Robles"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "gulp-connect"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.8"
+  }
+}

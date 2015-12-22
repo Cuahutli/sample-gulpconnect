@@ -1,0 +1,26 @@
+{
+  "name": "sample-gulpconnect",
+  "version": "1.0.0",
+  "description": "Proyecto de ejemplo uso gulp-connect",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cuahutli/sample-gulpconnect.git"
+  },
+  "keywords": [
+    "gulp-connect"
+  ],
+  "author": "Cuahutli Miguel Ulloa Robles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cuahutli/sample-gulpconnect/issues"
+  },
+  "homepage": "https://github.com/Cuahutli/sample-gulpconnect#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.3.1"
+  }
+}

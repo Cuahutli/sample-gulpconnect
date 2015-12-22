@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejemplo con gulp-connect</title>
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+	<body ng-app = "app">
+		<div class="container">
+
+			<!--NAVBAR-->
+			<nav class="navbar navbar-default navbar-static">
+				<!--Mobile Menu-->
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!--Desktop/Tablet Menu-->
+				<div class="collapse navbar-collapse js-navbar-collapse">
+					<div class="container">
+						<div class="row">
+							<div class="btn-group btn-group-justified">
+								<!--Home-->
+								<div class="btn-group">
+									<button type="button" class="btn btn-nav">
+										<span class="glyphicon glyphicon-home"></span>
+										<p id="home">Home</p>
+									</button>
+								</div>
+								<!--TechTicket-->
+								<div class="btn-group">
+									<button type="button" class="btn btn-nav">
+										<span class="glyphicon glyphicon-ok-sign"></span>
+										<p id="techtickets">TechTicket</p>
+									</button>
+								</div>
+								<!--Reports-->
+								<div class="btn-group">
+									<button type="button" class="btn btn-nav">
+										<span class="glyphicon glyphicon-stats"></span>
+										<p id="reports">Reports</p>
+									</button>
+								</div>
+								<!--Profile-->
+								<div class="btn-group">
+									<button type="button" class="btn btn-nav">
+										<span class="glyphicon glyphicon-user"></span>
+										<p id="profile">Profile</p>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<div class="jumbotron">
+				<h1>Hola Mundo!! <span class="subtitle">desde aqui</span></h1>
+			</div>
+
+			<div  ng-controller ="appCtrl">
+				<div class="form-control">
+					<label for="">Nombre:</label>
+					<input type="text" ng-model="nombre">
+				</div>
+
+				<div class="form-group has-success has-feedback">
+					<label class="control-label" for="">Input with success</label>
+					<input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status" ng-model="nombre">
+					<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+					<span id="inputSuccess2Status" class="sr-only">(success)</span>
+				</div>
+
+				<hr>
+
+				<p>{{ saludo }}  {{ nombre }}</p>
+			</div>
+		</div>
+		<script src="bower_components/angular/angular.min.js"></script>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
