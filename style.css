@@ -92,3 +92,10 @@ body {
 		overflow-x: hidden;
 	}
 }
+
+
+.navbar-collapse{
+	padding-left:0;
+	padding-right: 0;
+}
+
