@@ -13,7 +13,7 @@ $(function () {
 });
 
 
-angular.module('app', [])
+angular.module('app', ['app2'])
 	.controller('appCtrl', ['$scope', function ($scope) {
 		"use strict";
 		$scope.saludo = "Bienvenido: ";
@@ -24,3 +24,4 @@ angular.module('app', [])
 			'Karma'
 		];
 	}]);
+
